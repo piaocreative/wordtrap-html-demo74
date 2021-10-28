@@ -1,0 +1,89 @@
+.Categories {
+  font-size: 45px;
+  font-family: "Poppins";
+  color: rgb(21, 21, 21);
+  text-transform: uppercase;
+  line-height: 0.467;
+  text-align: left;
+}
+
+.German_quality {
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgb(227, 37, 46);
+  text-transform: uppercase;
+  line-height: 3.438;
+  text-align: left;
+}
+
+.Engine_for__all_cars {
+  font-size: 45px;
+  font-family: "Poppins";
+  color: rgb(21, 21, 21);
+  text-transform: uppercase;
+  line-height: 1.222;
+  text-align: left;
+}
+
+.Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
+  font-size: 16px;
+  font-family: "Inter";
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.GO_TO_PAGE {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.Big_Sale_for_everyone {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: rgba(255, 255, 255, 0.702);
+  text-transform: uppercase;
+  line-height: 3.929;
+  text-align: left;
+}
+
+.Summer_is__comming {
+  font-size: 35px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: left;
+}
+
+.sale {
+  font-size: 35px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: left;
+}
+
+.Card-header {
+  font-size: 25px;
+  font-family: "Poppins";
+  color: rgb(227, 37, 46);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: left;
+}
+
+.Card-categories {
+  font-size: 16px;
+  font-family: "Inter";
+  color: rgba(21, 21, 21, 0.8);
+  line-height: 2.188;
+  text-align: left;
+}

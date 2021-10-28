@@ -1,0 +1,37 @@
+#ads-brand {
+    @include media-breakpoint-up(xl)  {
+        padding-top: 7.5625rem;
+    }
+
+    padding-top: 3rem;
+}
+
+#ads-brand .ads {
+    .ads-content-top {
+        @include media-breakpoint-up(xl)  {
+            top: 13.1rem;
+        }
+
+        .heading {
+            font-weight: 700;
+            @include media-breakpoint-up(xl)  {
+                font-size: $h5-font-size;
+            }
+
+            padding: 0px 0px 26px 0px;
+            margin-bottom: 0;
+        }
+
+        .content {
+            font-weight: normal;
+            line-height: 2.65rem;
+            @include media-breakpoint-up(xl)  {
+                font-size: 45px;
+            }
+        }
+
+        hr {
+            color: #777db2;
+        }
+    }
+}

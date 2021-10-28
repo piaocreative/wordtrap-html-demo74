@@ -1,0 +1,360 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+	font-family: $heading-font;
+
+	// Transparent header
+	&.transparent-header {
+		background: transparent;
+		z-index: 199;
+	}
+
+	font-family: $body-font;
+
+	@include media-breakpoint-up(xl)  {
+		#navbarCollapse {
+			height: $header-height;
+		}
+	}
+
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+#header-wrap {
+	
+	&>nav {
+		padding-left: 2.8125rem;
+		@include media-breakpoint-down(xl) {
+			padding-right: 2.8125rem;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		};
+	}
+
+	.category-btn {
+		width: fit-content;
+		border-radius: 0;
+		font-size: $h5-font-size;
+		font-weight: bold;
+		@include media-breakpoint-up(xl)  {
+			height: 74px;
+			padding: 34px 59px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		width: 100%;
+		height: 74px;
+
+		span {
+			margin-right: 1rem;
+		}
+	}
+
+	.secondary-nav {
+		border-top: 1px solid #f2f2f2;
+		padding-bottom: 0 !important;
+		
+		#navbarCollapsable {
+			align-items: center;
+
+			ul {
+				// height: 100%;
+				li.nav-item {
+					padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+	
+					@include media-breakpoint-up(xl)  {
+						width: 185px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					a {
+						font-weight: 500;
+						font-size: 1rem;
+						font-family: $heading-font;
+						color: #151515;
+	
+						&::after {
+							margin-left: 1rem;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-right: 3.75rem;
+
+	img {
+		padding-bottom: 1.1875rem;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $primary-menu-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+
+		@include media-breakpoint-up(xl)  {
+			line-height: 1;
+			padding: $primary-menu-padding 1.875rem;
+		}
+	}
+
+	.nav-item {
+		&.current,
+		&:hover {
+			a {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+
+	
+	@include media-breakpoint-up(xl)  {
+		width: 280px;
+		padding-left: 1.375rem;	
+	}
+
+	.nav-item {
+		margin-right: 1rem;
+
+		@include media-breakpoint-up(xl)  {
+			margin-right: 0;
+		}
+	}
+
+	.nav-link {
+		color: $top-btn-font-color;		
+		font-size: $top-btn-font-size;	
+		line-height: 1;
+
+		@include media-breakpoint-up(xl)  {
+			padding: 0 0.9375rem;
+		}
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+#top-search-wrapper {
+	height: 3.3125rem;
+	font-family: $primary-menu-font;
+
+	.search-box {
+
+		@include media-breakpoint-up(xl) {
+			width: 48.4375rem;
+		}
+
+		display: flex;
+		padding: 0.1125rem;
+		border: 0.0625rem solid #ebebeb;
+		border-radius: 0.6875rem;
+		
+		input {
+			flex-grow: 1;
+			border: 0px;
+			padding-left: 1.9375rem;
+
+			&::placeholder {
+				color: #a3a3a3;
+			}
+		}
+
+		button {
+			height: 3.0625rem;
+			border-radius: 0.6125rem;
+			width: 10.8125rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 14px;
+			font-weight: normal;
+			
+		}
+	}
+}
+
+/* ----------------------------------------------------------------
+	Top Contact Us
+-----------------------------------------------------------------*/
+
+#top-contact-us {
+
+	@include media-breakpoint-up(xl) {
+		width: 650px;
+	}
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 0 4.5rem 0 4.5rem;
+
+	.info-box {
+		padding: 1.75rem 0 1.75rem 0;
+		margin: 0 2.9375rem 0 3.3125rem; 
+
+		.info {
+			font-weight: 500;
+			font-family: $heading-font;
+		}
+	}
+}
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {
+	display: flex;
+
+	.phone-number {
+		margin-right: 2.875rem;
+		
+		a {
+			color: $topbar-color;
+			margin-left: 1.75rem;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+#top-social,
+#top-social ul { margin: 0; }
+
+#top-social {
+	ul {
+		display: flex;
+		align-items: center;
+	}
+
+	li {
+		padding: 0 0.25rem;
+
+		a {
+			background-color: rgba($topbar-color, 0.7);
+			border-radius: 50%;
+			color: rgba($topbar-hover-color, 0.7);
+			display: inline-block;
+			line-height: 1.8125rem;
+			width: 1.8125rem;
+			height: 1.8125rem;		
+			vertical-align: middle;
+			text-align: center;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+
+			i {
+				vertical-align: top;
+				line-height: 1.8125rem;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+
